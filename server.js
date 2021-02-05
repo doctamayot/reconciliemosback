@@ -25,9 +25,9 @@ mongoose
   .catch((err) => console.log('DB CONNECTION ERR', err));
 
 // middlewares
-app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // routes middleware
 // routes middleware
